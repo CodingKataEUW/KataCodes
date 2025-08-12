@@ -85,15 +85,26 @@ export default function Navbar() {
             <Link href="#">Contact</Link>
 
             {/* Theme toggle button in mobile menu */}
-            <button
+            <div className='flex gap-4 self-center w-full'>
+                      <button
               onClick={() => {
                 toggleTheme();
                 toggleMenu();
               }}
-              className="w-full px-3 py-2 rounded-md border border-gray-300 dark:border-gray-600 text-gray-600 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 transition"
+              className="w-full px-3 py-2 text-2xl rounded-md border-gray-600 bg-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 transition"
             >
-              {theme === 'dark' ? 'Light' : 'Dark'}
+              Reach me out
             </button>
+                    <button
+              onClick={() => {
+                toggleTheme();
+                toggleMenu();
+              }}
+              className="w-full px-3 py-2 text-2xl rounded-md border border-gray-300  hover:bg-gray-100 dark:hover:bg-gray-800 transition"
+            >
+              {theme === 'dark' ? 'Theme 🌛' : ' Theme 🌚'}
+            </button>
+            </div>
           </div>
         </div>
       </div>
