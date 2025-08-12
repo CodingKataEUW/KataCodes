@@ -1,6 +1,10 @@
 @import "tailwindcss";
 
 
+a, button {
+  cursor: pointer;
+}
+
 html, body,nav, .mobile-menu  {
   margin: 0;
   padding: 0;

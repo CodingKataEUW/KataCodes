@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { useTheme } from 'next-themes';
 import Enso from '../Logo/Logo';
 import { Special_Elite } from "next/font/google";
+import AnimatedHamburger from '../Hamburger/Hamburger';
 
 const specialElite = Special_Elite({
   weight: "400",
@@ -43,22 +44,31 @@ export default function Navbar() {
             {/* Theme toggle button */}
             <button
               onClick={toggleTheme}
+              className='rounded-md w-20 bg-red-100 text-2xl'
             >
-              {theme === 'dark' ? 'Light' : 'Dark'}
+              {theme === 'dark' ? '🌛' : '🌚'}
             </button>
           </div>
 
           {/* Mobile menu button */}
-          <div className="flex items-center md:hidden">
-            <button onClick={toggleMenu} className="text-gray-700 dark:text-gray-200 hover:text-blue-600 focus:outline-none">
-              <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                {isOpen ? (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
-                ) : (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
-                )}
-              </svg>
-            </button>
+          <div className="flex items-center  md:hidden">
+     <button
+      onClick={() => setIsOpen(!isOpen)}
+      aria-label="Toggle menu"
+      aria-expanded={isOpen}
+      className="relative w-8 h-8 focus:outline-none"
+    >
+      <span
+        className={`block absolute left-0 top-3.5 h-0.5 w-8 bg-current rounded transform transition duration-300 ease-in-out ${
+          isOpen ? "rotate-45 top-6" : ""
+        }`}
+      ></span>
+      <span
+        className={`block absolute left-0 top-5.5 h-0.5 w-8 bg-current rounded transform transition duration-300 ease-in-out ${
+          isOpen ? "-rotate-45 top-6" : ""
+        }`}
+      ></span>
+    </button>
           </div>
         </div>
       </div>
