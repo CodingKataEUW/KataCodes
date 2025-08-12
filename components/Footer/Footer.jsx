@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 export default function Footer() {
@@ -10,20 +11,20 @@ export default function Footer() {
         </p>
         
         <nav className="flex space-x-6 text-sm">
-          <a href="/" style={{ textDecoration: 'none' }}>Home</a>
-          <a href="/about" style={{ textDecoration: 'none' }}>About</a>
-          <a href="/services" style={{ textDecoration: 'none' }}>Services</a>
-          <a href="/contact" style={{ textDecoration: 'none' }}>Contact</a>
+          <Link href="/" style={{ textDecoration: 'none' }}>Home</Link>
+          <Link href="/about" style={{ textDecoration: 'none' }}>About</Link>
+          <Link href="/services" style={{ textDecoration: 'none' }}>Services</Link>
+          <Link href="/contact" style={{ textDecoration: 'none' }}>Contact</Link>
         </nav>
 
         <div className="flex space-x-4">
           {/* Пример социални икони, можеш да сложиш иконки ако искаш */}
-          <a href="https://twitter.com" aria-label="Twitter" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+          <Link href="https://twitter.com" aria-label="Twitter" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
             Twitter
-          </a>
-          <a href="https://github.com" aria-label="GitHub" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+          </Link>
+          <Link href="https://github.com" aria-label="GitHub" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
             GitHub
-          </a>
+          </Link>
         </div>
       </div>
     </footer>
