@@ -91,7 +91,7 @@ export default function Navbar() {
                 toggleTheme();
                 toggleMenu();
               }}
-              className="w-full px-3 py-2 text-2xl rounded-md border-gray-600 bg-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 transition"
+              className="w-full px-3 py-2 text-lg rounded-md border-gray-600 bg-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 transition"
             >
               Reach me 
             </button>
@@ -100,7 +100,7 @@ export default function Navbar() {
                 toggleTheme();
                 toggleMenu();
               }}
-              className="w-full px-3 py-2 text-2xl rounded-md border border-gray-300  hover:bg-gray-100 dark:hover:bg-gray-800 transition"
+              className="w-full px-3 py-2 text-lg rounded-md border border-gray-300  hover:bg-gray-100 dark:hover:bg-gray-800 transition"
             >
               {theme === 'dark' ? 'Theme 🌛' : ' Theme 🌚'}
             </button>
