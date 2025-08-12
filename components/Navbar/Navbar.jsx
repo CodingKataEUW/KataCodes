@@ -28,7 +28,7 @@ export default function Navbar() {
 <Enso className="stroke-gray-900 dark:stroke-white" />
       <div className='flex flex-col gap-[1px]'>
         <p className={`${specialElite.className}`}>KataCodes</p>
-        <span className='text-xs '>(GLTdotNS)</span>
+        <span className='text-xs '>(GLTdotNSs)</span>
       </div>
             </Link>
           </div>
