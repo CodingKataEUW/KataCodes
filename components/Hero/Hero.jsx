@@ -7,22 +7,31 @@ export default function HeroSection() {
         Welcome to My Landing Page
       </h1>
       <div className="flex flex-col md:flex-row w-full gap-4">
-        <div className="bg-gray-800/60 w-full lg:w-1/2 p-4 text-left text-white rounded-lg">
+        <div className="bg-gray-800/50 shadow-xl w-full lg:w-1/2 p-4 text-left text-white rounded-lg">
           <h3>About me</h3>
           <p className="text-sm">
-Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate provident vitae iure repellendus tempore tenetur. Cumque, obcaecati porro. Dicta mollitia quo similique rerum! Molestiae, inventore dolore perspiciatis saepe distinctio labore!
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate
+            provident vitae iure repellendus tempore tenetur. Cumque, obcaecati
+            porro. Dicta mollitia quo similique rerum! Molestiae, inventore
+            dolore perspiciatis saepe distinctio labore!
           </p>
         </div>
         <div className="bg-gray-800/60 w-full lg:w-1/2 p-4 text-left text-white rounded-lg">
           <h3>About me</h3>
           <p className="text-sm">
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel expedita adipisci facilis exercitationem molestias amet incidunt, blanditiis impedit sint aliquam repudiandae veniam reprehenderit reiciendis? Odio eaque quos quibusdam ipsum at?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+            expedita adipisci facilis exercitationem molestias amet incidunt,
+            blanditiis impedit sint aliquam repudiandae veniam reprehenderit
+            reiciendis? Odio eaque quos quibusdam ipsum at?
           </p>
         </div>
         <div className="bg-gray-800/60 w-full lg:w-1/2 p-4 text-left text-white rounded-lg">
           <h3>About me</h3>
           <p className="text-sm">
-       Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum inventore eveniet voluptatem enim ducimus ratione odit optio amet similique officia provident, non rerum eius sed omnis alias, incidunt placeat doloribus.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+            inventore eveniet voluptatem enim ducimus ratione odit optio amet
+            similique officia provident, non rerum eius sed omnis alias,
+            incidunt placeat doloribus.
           </p>
         </div>
       </div>

@@ -1,16 +1,15 @@
 // components/Layout.jsx
-'use client';
+"use client";
 
 import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
 
 export default function Layout({ children }) {
   return (
-    <div >
+    <div>
       <Navbar />
       {children}
-      <Footer/>
+      <Footer />
     </div>
   );
 }
-
