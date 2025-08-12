@@ -12,7 +12,6 @@ export default function Footer() {
         
         <nav className="flex space-x-6 text-sm">
           <Link href="/" style={{ textDecoration: 'none' }}>Home</Link>
-          <Link href="/about" style={{ textDecoration: 'none' }}>About</Link>
           <Link href="/services" style={{ textDecoration: 'none' }}>Services</Link>
           <Link href="/contact" style={{ textDecoration: 'none' }}>Contact</Link>
         </nav>
