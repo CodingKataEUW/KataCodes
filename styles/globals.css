@@ -1,15 +1,24 @@
 @import "tailwindcss";
 
 
-html, body {
+html, body,nav, .mobile-menu  {
   margin: 0;
   padding: 0;
   background-color: white;
   color: black;
-  transition: background-color 0.3s, color 0.3s;
+
 }
 
-.dark html, .dark body {
+.dark html, .dark body, .dark nav, .dark .mobile-menu {
   background-color: #111827; /* тъмно */
   color: #f3f4f6; /* светъл текст */
+}
+
+svg {
+    stroke:  #111827 !important;
+
+}
+
+.dark svg {
+    stroke:  white !important; 
 }
