@@ -1,7 +1,10 @@
+import Link from "next/link";
+
 export default function BlogPosts() {
   const posts = [
     {
       id: 1,
+      slug: "how-to-build-a-blog-like-reddit",
       title: "How to build a blog like Reddit",
       author: "u/yourname",
       createdAt: "4 hours ago",
@@ -14,6 +17,7 @@ export default function BlogPosts() {
     },
     {
       id: 2,
+      slug: "why-tailwind-is-awesome-for-layouts",
       title: "Why Tailwind is awesome for layouts",
       author: "u/designer",
       createdAt: "1 day ago",
@@ -40,7 +44,9 @@ export default function BlogPosts() {
               <span className="hover:underline cursor-pointer">{post.author}</span> • {post.createdAt}
             </p>
             <h2 className="text-lg font-semibold hover:underline cursor-pointer">
-              {post.title}
+              <Link href={`/posts/${post.slug}`}>
+                {post.title}
+              </Link>
             </h2>
             <p className="mt-2 text-sm line-clamp-3">{post.content}</p>
             <div className="mt-3 flex gap-6 text-xs">
